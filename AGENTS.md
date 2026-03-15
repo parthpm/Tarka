@@ -27,6 +27,7 @@ python tarka.py "task" --rounds 3 --cwd /path/to/project
 
 ## Principles
 
+- **Tarka is a deterministic harness, not a third brain.** All intelligence lives inside the agents. Tarka mechanically executes a fixed protocol: propose → critique × N → synthesize. Given the same agent outputs, it always routes, formats, and presents identically. No LLM in the orchestration layer. No smart routing. No AI deciding when to stop. The user controls agents, rounds, and timeout — Tarka executes exactly as specified.
 - One file until it hurts.
 - No abstraction without a second use case.
 - Make the prompts do the work, not the code.
